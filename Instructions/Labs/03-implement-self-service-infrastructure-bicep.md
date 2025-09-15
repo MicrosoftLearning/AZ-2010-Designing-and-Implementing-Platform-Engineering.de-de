@@ -12,15 +12,15 @@ lab:
 
 - Azure-Abonnement: Falls Sie nicht über ein Azure-Abonnement verfügen, können Sie ein [kostenloses Konto](https://azure.microsoft.com/free/) erstellen.
 - Grundkenntnisse der Azure-Dienste und der Azure CLI.
-- Visual Studio Code ist mit der Bicep-Erweiterung installiert.
-- Azure CLI auf Ihrem lokalen Rechner installiert und konfiguriert.
+- Installation von Visual Studio Code mit der Bicep-Erweiterung.
+- Installation und Konfiguration der Azure CLI auf Ihrem lokalen Computer.
 - Vertrautheit mit Infrastructure as Code (IaC)-Konzepten.
 
 ## Ziele
 
 - Einrichten von Bicep in Ihrer Umgebung
 - Erstellen einer Bicep-Vorlage, um Azure-Ressourcen zu definieren
-- Bereitstellen eines Azure App Service mit einem SQL-Datenbank-Backend
+- Bereitstellen einer Azure App Service-Instanz mit einem SQL-Datenbank-Back-End
 - Erzwingen von Governance mithilfe von Tags und Richtlinien
 - Implementieren der automatisierten Skalierung mit Bicep
 
