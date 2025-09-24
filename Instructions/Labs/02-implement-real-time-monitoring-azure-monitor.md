@@ -82,7 +82,7 @@ Als Fachkraft in der Entwicklung müssen Sie sicherstellen, dass die auf Ihrer P
 1. Klicken Sie unter „Bedingung“ in das Feld „Signalname“ und wählen Sie „Antwortzeit“ aus.
 1. Konfigurieren Sie die Warnungsregel:
    - Schwellenwerttyp: Dynamisch
-   - Aggregationstyp: Mittelwert
+   - Aggregationstyp: Durchschnitt
    - Wert ist: Größer oder kleiner als
    - Schwellenwertempfindlichkeit: Hoch
    - Bewertungszeitpunkt: Im Minutentakt und fünf Minuten in die Vergangenheit.
