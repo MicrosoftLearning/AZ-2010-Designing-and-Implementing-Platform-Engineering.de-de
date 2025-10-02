@@ -455,7 +455,7 @@ In dieser Aufgabe erstellen Sie mit Azure Image Builder ein benutzerdefiniertes 
          "properties": {
            "buildTimeoutInMinutes": 100,
            "vmProfile": {
-             "vmSize": "Standard_DS2_v2",
+             "vmSize": "Standard_D2s_v3",
              "osDiskSizeGB": 127
            },
            "source": {
@@ -607,6 +607,17 @@ Um die Imageerstellung für Microsoft Dev Box-Teamanpassungen zu konfigurieren, 
 1. Auf der Seite **devcenter-project-01 \| Kataloge** wählen Sie **+ Hinzufügen**.
 1. Im Bereich **Katalog hinzufügen** geben Sie im Textfeld **Name** **`image-definitions-01`** ein, im Abschnitt **Katalogquelle** wählen Sie **GitHub**, im Feld **Authentifizierungstyp**, wählen Sie **GitHub-App**, lassen Sie das Kontrollkästchen **Diesen Katalog automatisch synchronisieren** aktiviert und wählen Sie dann **Mit GitHub anmelden**.
 1. Wenn Sie dazu aufgefordert werden, geben Sie im Fenster **Mit GitHub anmelden** Ihre GitHub-Anmeldedaten ein und wählen **Anmelden**.
+1. Ist eine Meldung zu sehen, die besagt, dass keine mit dem Konto verknüpften GitHub-Repositorys gefunden wurden, und es wird ein Link zum **Konfigurieren Ihrer Repositorys** angezeigt, tritt dies normalerweise beim erstmaligen Einrichten auf oder wenn die GitHub-App zuvor noch nicht konfiguriert wurde. Führen Sie die folgenden zusätzlichen Schritte aus, um die Microsoft DevCenter GitHub-App einzurichten:
+
+   1. Wählen Sie den Link **Ihre Repositorys konfigurieren** aus. Dadurch wird eine neue Browserregisterkarte oder ein neues Browserfenster geöffnet, das zu GitHub weiterleitet.
+   1. Auf der GitHub-Seite **Microsoft DevCenter installieren** werden Sie aufgefordert, die App mit Ihrem persönlichen Konto zu installieren.
+   1. Wählen Sie im Abschnitt **Mit Ihrem persönlichen Konto installieren** eine der folgenden Optionen aus:
+      - Wählen Sie **Alle Repositorys** aus, um Zugriff auf alle aktuellen und zukünftigen Repositorys in Ihrem Konto zu gewähren.
+      - Wählen Sie **Nur ausgewählte Repositorys** aus, um bestimmte Repositorys auszuwählen. Bevor Sie fortfahren, stellen Sie sicher, dass Sie das Repository **contoso-co-eShop** in Ihr GitHub-Konto geforkt haben. Wenn Sie diese Option auswählen, verwenden Sie das Dropdownmenü **Repository auswählen**, um das Repository **contoso-co-eShop** auszuwählen (oder andere Repositorys, die Sie Azure DevCenter zur Verfügung stellen möchten).
+   1. Überprüfen Sie die Berechtigungen, die unter dem Abschnitt **Mit diesen Berechtigungen** gewährt werden, in der Regel einschließlich „Lesezugriff auf Code und Metadaten“.
+   1. Klicken Sie auf **Installieren**, um die GitHub-App-Installation abzuschließen.
+   1. Sie werden zurück zum Azure-Portal geleitet. Wenn die Weiterleitung nicht automatisch erfolgt, schließen Sie die GitHub-Registerkarte, und kehren Sie zum Azure-Portal zurück.
+   1. Wählen Sie im Azure-Portal auf der Seite **Katalog hinzufügen** die Option **Aktualisieren** aus, oder aktualisieren Sie die Seite, um die Repositoryliste neu zu laden.
 
    > **Hinweis:** Sie müssen das Repository https://github.com/MicrosoftLearning/contoso-co-eShop in Ihr GitHub-Konto verzweigen, bevor Sie diesen Schritt ausführen können.
 

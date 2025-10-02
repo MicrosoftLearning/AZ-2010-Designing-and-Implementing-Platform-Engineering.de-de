@@ -49,6 +49,8 @@ Als Fachkraft in der Entwicklung müssen Sie sicherstellen, dass die auf Ihrer P
 1. Application Insights ist bereits für diese Web-App aktiviert. Klicken Sie auf den Link, um die Application Insights-Ressource zu öffnen.
 1. Klicken Sie in der Application Insights-Ressource im Anwendungs-Dashboard, um die Leistungsdaten anzuzeigen, die im Standard-Dashboard bereitgestellt werden.
 
+   > **Hinweis:** Es kann einige Minuten dauern, bis auf dem Dashboard alle Leistungsdaten vollständig geladen und angezeigt werden. Für eine optimale Benutzererfahrung in nachfolgenden Übungen warten Sie, bis das Dashboard vollständig gerendert ist, bevor Sie fortfahren.
+
 ## Übung 2: Konfigurieren von Azure Monitor und Dashboards
 
 ### Aufgabe 1: Zugriff auf Azure Monitor
@@ -66,10 +68,18 @@ Als Fachkraft in der Entwicklung müssen Sie sicherstellen, dass die auf Ihrer P
 1. Wiederholen Sie den Vorgang für weitere Metriken:
    - CPU-Zeit (Anzahl)
    - Anforderungen (Mittelwert)
-1. Klicken Sie auf das Dashboard und heften Sie es an dieses.
-1. Wählen Sie den Typ „Freigegeben“ und wählen Sie das Abonnement und das Dashboard „monitoringlab-webapp“ aus.
-1. Klicken Sie auf An Dashboard anheften.
-1. Klicken Sie im linken Bereich auf das Dashboardsymbol, um das Dashboard anzuzeigen.
+1. Wählen Sie im Metrikdiagrammbereich in der oberen rechten Ecke des Diagramms die Schaltfläche **An Dashboard anheften** (Anheftsymbol).
+1. Gehen Sie im daraufhin angezeigten Dialogfeld **An Dashboard anheften** wie folgt vor:
+   - Wählen Sie **Neu** aus, um ein neues Dashboard zu erstellen.
+   - Geben Sie einen Dashboardnamen ein: **`MonitoringLab Dashboard`**
+   - Wählen Sie das entsprechende Abonnement aus.
+   - Wählen Sie den Dashboardtyp:
+     - **Öffentlich**: Das Dashboard ist für alle Benutzer in der Organisation sichtbar. Dies ist für Szenarien geeignet, in denen die Freigabe der Sichtbarkeit erforderlich ist.
+     - **Privat**: Das Dashboard ist nur für Sie sichtbar. Dies wird für Labübungen oder Szenarien empfohlen, in denen die Datensichtbarkeit eingeschränkt werden sollte.
+   - Wählen Sie **Erstellen und anheften** aus.
+1. Nachdem das Dashboard erstellt wurde und die Metriken angeheftet sind, wählen Sie im oberen Menü **Speichern**, um das Dashboard zu speichern.
+1. Navigieren Sie zum Dashboard, indem Sie im linken Bereich des Azure-Portals das Symbol **Dashboard** wählen oder in der oberen Suchleiste nach „Dashboard“ suchen.
+1. Wählen Sie Ihr neu erstelltes **MonitoringLab-Dashboard** aus der Dashboardliste aus.
 1. Überprüfen Sie, ob die Metriken im Dashboard angezeigt werden und in Echtzeit aktualisiert werden.
 
 ## Übung 3: Erstellen von Warnungen
